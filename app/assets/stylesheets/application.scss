@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: black;
+  color: white;
+  font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid grey;
+  padding: 1rem;
+  height: 100vh;
+}
+
+.flow * + * {
+  margin-bottom: 1rem;
+}
+
+.upper {
+  flex-grow: 1;
+}
+
+.speech-bubble {
+  padding: .5rem 1rem;
+  border: 1px solid white;
+}
